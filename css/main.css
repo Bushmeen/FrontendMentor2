@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  margin: 2em;
+  overflow: hidden;
+  max-width: 400px;
+}
+.card__box {
+  font-size: 2rem;
+  padding: 2em;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(213deg, 19%, 18%);
+}
+.card__icon {
+  position: relative;
+  background-color: hsl(217deg, 8%, 31%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-bottom: 0.7em;
+}
+.card__icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card__title {
+  margin-bottom: 0.5em;
+}
+.card__title--back {
+  margin-top: 1em;
+}
+.card__text {
+  font-size: 1.6rem;
+  margin-bottom: 1.5em;
+}
+.card__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.card__rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 1em;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 8%, 31%);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.card__rate:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.card__submitn-btn {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.card__submitn-btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.card__back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.4s;
+  transition: opacity 0.2s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.2s;
+  transition: transform 0.4s, opacity 0.2s, -webkit-transform 0.4s;
+  padding: 1em;
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.card__back img {
+  margin-top: 1em;
+}
+.card__user-opinion {
+  background-color: hsl(217deg, 8%, 31%);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.4em 0.6em;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.top {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.background-color {
+  background-color: hsl(217deg, 12%, 63%);
+}/*# sourceMappingURL=main.css.map */

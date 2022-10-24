@@ -1,0 +1,138 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 67.5%;
+}
+body {
+	font-family: 'Overpass', sans-serif;
+	background-color: $veryDarkBlue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.card {
+	position: relative;
+	border-radius: 10px;
+	margin: 2em;
+	overflow: hidden;
+	max-width: 400px;
+	
+	&__box {
+		font-size: 2rem;
+		padding: 2em;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		color: $white;
+		background-color: $darkBlue;
+	}
+	&__icon {
+		position: relative;
+		background-color: $mediumGrey;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		margin-bottom: 0.7em;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__title {
+		margin-bottom: 0.5em;
+		&--back {
+			margin-top: 1em;
+		}
+	}
+	&__text {
+		font-size: 1.6rem;
+		margin-bottom: 1.5em;
+	}
+	&__rating {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 1.5em;
+	}
+	&__rate {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		padding: 1em;
+		border: none;
+		color: $white;
+		background-color: $mediumGrey;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		&:hover{
+			background-color: $orange;
+		}
+	}
+	&__submitn-btn {
+		padding: 1em 2em;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 30px;
+		border: none;
+		color: $white;
+		background-color: $orange;
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+		&:hover{
+			background-color: $white;
+			color: $orange;
+		}
+	}
+	&__back {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: $darkBlue;
+		border-radius: 10px;
+		opacity: 0;
+		transform: translateY(100%);
+		transition: transform 0.4s, opacity 0.2s;
+		padding: 1em;
+		font-size: 2rem;
+		
+		color: $white;
+		img {
+			margin-top: 1em;
+		}
+	}
+	&__user-opinion {
+		background-color: $mediumGrey;
+		color: $orange;
+		padding: 0.4em 0.6em;
+		border-radius: 30px;
+		font-size: 1.6rem;
+		margin-top: 1em;
+	}
+}
+.top {
+	
+	opacity: 1;
+	transform: translateY(0);
+}
+.background-color{
+	background-color: $lightGrey;
+}
